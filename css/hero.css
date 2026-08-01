@@ -5,6 +5,12 @@
     padding: 72px 0;
     max-width: 1440px;
     margin: 0 auto;
+
+   
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero-bg-mob@1x.jpg);
+
+  
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         image-set(url(../images/hero-bg-mob@1x.jpg) 1x,
             url(../images/hero-bg-mob@2x.jpg) 2x);
@@ -14,16 +20,24 @@
     background-size: cover;
 }
 
+
+@media only screen and (min-resolution: 192dpi),
+only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-bg-mob@2x.jpg);
+    }
+}
+
 .hero .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 72px;
-
 }
 
 .hero-tittle {
-    max-width: 320px;
+    max-width: 216px;
     text-align: center;
     font-weight: 700;
     font-size: 36px;
@@ -31,7 +45,8 @@
     letter-spacing: 0.02em;
 }
 
-.herro-button {
+.hero-button {
+   
     display: block;
     min-width: 169px;
     height: 56px;
@@ -50,8 +65,8 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.herro-button:hover,
-.herro-button:focus {
+.hero-button:hover,
+.hero-button:focus {
     background-color: #404BBF;
 }
 
@@ -59,7 +74,10 @@
 @media only screen and (min-width: 768px) {
     .hero {
         padding: 112px 0;
- 
+
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-bg-tab@1x.jpg);
+
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             image-set(url(../images/hero-bg-tab@1x.jpg) 1x,
                 url(../images/hero-bg-tab@2x.jpg) 2x);
@@ -78,9 +96,21 @@
 }
 
 
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi),
+only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-bg-tab@2x.jpg);
+    }
+}
+
+
 @media only screen and (min-width: 1158px) {
     .hero {
         padding: 188px 0;
+
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-bg-desk@1x.jpg);
 
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             image-set(url(../images/hero-bg-desk@1x.jpg) 1x,
@@ -90,5 +120,13 @@
     .hero .container {
         gap: 48px;
     }
+}
 
+
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi),
+only screen and (min-width: 1158px) and (-webkit-min-device-pixel-ratio: 2) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-bg-desk@2x.jpg);
+    }
 }
