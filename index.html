@@ -25,6 +25,11 @@
         <a class="header-logo" href="./index.html"
           ><span class="acsent">Web</span>studio</a
         >
+        <button type="button" class="menu-btn">
+          <svg class="menu-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
         <nav class="header-nav">
           <ul class="header-links">
             <li><a class="link link-current" href="#features">Features</a></li>
@@ -32,8 +37,8 @@
             <li><a class="link" href="#portfolio">Portfolio</a></li>
           </ul>
         </nav>
-        <address class="adress">
-          <ul class="adress-links">
+        <address class="address">
+          <ul class="address-links">
             <li>
               <a class="link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -69,7 +74,7 @@
                 </svg>
               </div>
               <h3 class="features-title">Strategy</h3>
-              <p class="features-item">
+              <p class="features-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -81,7 +86,7 @@
                 </svg>
               </div>
               <h3 class="features-title">Punctuality</h3>
-              <p class="features-item">
+              <p class="features-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -93,7 +98,7 @@
                 </svg>
               </div>
               <h3 class="features-title">Diligence</h3>
-              <p class="features-item">
+              <p class="features-text">
                 Research and confirm brands with the strongest digital growth
                 opportunities and minimize risk.
               </p>
@@ -105,7 +110,7 @@
                 </svg>
               </div>
               <h3 class="features-title">Technologies</h3>
-              <p class="features-item">
+              <p class="features-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -121,7 +126,11 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/team-1.jpg"
+                srcset="
+                  ./images/team/team-1.jpg    1x,
+                  ./images/team/team-1@2x.jpg 2x
+                "
+                src="./images/team/team-1.jpg"
                 alt="Mark Guerrero Product Designer"
                 width="264"
               />
@@ -187,7 +196,11 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/team-2.jpg"
+                srcset="
+                  ./images/team/team-2.jpg    1x,
+                  ./images/team/team-2@2x.jpg 2x
+                "
+                src="./images/team/team-2.jpg"
                 alt="Tom Ford Frontend Developer"
                 width="264"
               />
@@ -253,7 +266,11 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/team-3.jpg"
+                srcset="
+                  ./images/team/team-3.jpg    1x,
+                  ./images/team/team-3@2x.jpg 2x
+                "
+                src="./images/team/team-3.jpg"
                 alt="Camila Garcia Marketing"
                 width="264"
               />
@@ -319,7 +336,11 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/team-4.jpg"
+                srcset="
+                  ./images/team/team-4.jpg    1x,
+                  ./images/team/team-4@2x.jpg 2x
+                "
+                src="./images/team/team-4.jpg"
                 alt="Daniel Wilson UI Designer"
                 width="264"
               />
@@ -393,7 +414,11 @@
               <div class="portfolio-img">
                 <img
                   class="portfolio-pict"
-                  src="./images/portfolio-1.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio-1.jpg    1x,
+                    ./images/portfolio/portfolio@2x-1.jpg 2x
+                  "
+                  src="./images/portfolio/portfolio-1.jpg"
                   alt="Banking App"
                   width="360"
                 />
@@ -414,7 +439,11 @@
               <div class="portfolio-img">
                 <img
                   class="portfolio-pict"
-                  src="./images/portfolio-2.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio-2.jpg    1x,
+                    ./images/portfolio/portfolio@2x-2.jpg 2x
+                  "
+                  src="./images/portfolio/portfolio-2.jpg"
                   alt="Cashless Payment"
                   width="360"
                 />
@@ -435,7 +464,11 @@
               <div class="portfolio-img">
                 <img
                   class="portfolio-pict"
-                  src="./images/portfolio-3.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio-3.jpg    1x,
+                    ./images/portfolio/portfolio@2x-3.jpg 2x
+                  "
+                  src="./images/portfolio/portfolio-3.jpg"
                   alt="Meditation App"
                   width="360"
                 />
@@ -456,7 +489,11 @@
               <div class="portfolio-img">
                 <img
                   class="portfolio-pict"
-                  src="./images/portfolio-4.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio-4.jpg    1x,
+                    ./images/portfolio/portfolio@2x-4.jpg 2x
+                  "
+                  src="./images/portfolio/portfolio-4.jpg"
                   alt="Taxi Service"
                   width="360"
                 />
@@ -477,7 +514,11 @@
               <div class="portfolio-img">
                 <img
                   class="portfolio-pict"
-                  src="./images/portfolio-5.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio-5.jpg    1x,
+                    ./images/portfolio/portfolio@2x-5.jpg 2x
+                  "
+                  src="./images/portfolio/portfolio-5.jpg"
                   alt="Screen Illustrations"
                   width="360"
                 />
@@ -498,7 +539,11 @@
               <div class="portfolio-img">
                 <img
                   class="portfolio-pict"
-                  src="./images/portfolio-6.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio-6.jpg    1x,
+                    ./images/portfolio/portfolio@2x-6.jpg 2x
+                  "
+                  src="./images/portfolio/portfolio-6.jpg"
                   alt="Online Courses"
                   width="360"
                 />
@@ -610,6 +655,99 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu">
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-btn" type="button">
+          <svg class="mobile-menu-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-menu-nav">
+          <ul class="mobile-menu-links">
+            <li class="mobile-menu-item">
+              <a class="link link-current" href="#features">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="link" href="#team">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="link" href="#portfolio">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <address class="mobile-menu-address">
+          <ul class="mobile-menu-address-links">
+            <li class="mobile-menu-address-item">
+              <a class="link tel-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-menu-address-item">
+              <a class="link mail-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <ul class="mobile-menu-social">
+          <li class="mobile-menu-social-item">
+            <a
+              class="mobile-menu-social-link"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to Instagram"
+            >
+              <svg class="mobile-menu-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a
+              class="mobile-menu-social-link"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to X"
+            >
+              <svg class="mobile-menu-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a
+              class="mobile-menu-social-link"
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to Facebook"
+            >
+              <svg class="mobile-menu-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a
+              class="mobile-menu-social-link"
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to LinkedIn"
+            >
+              <svg class="mobile-menu-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <div class="backdrop" id="modal">
       <div class="modal">

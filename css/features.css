@@ -1,61 +1,99 @@
 
 .features {
-    padding-top: 120px;
-    padding-bottom: 120px;
+   
+    padding: 96px 0;
 }
 
-.features .container {
-    max-width: 1158px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-
-}
 
 
 .features-list {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 72px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.features-box-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 0px;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-    width: 264px;
-    height: 112px;
-    background: #F4F4FD;
-    margin-bottom: 8px;
-}
 
 .features-item {
-    width: 264px;
-    
+    width: 100%;
 }
 
 
+.features-box-icon {
+    display: none;
+}
 
 .features-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    color: #2E2F42;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
+    color: #2E2F42;
     margin-bottom: 8px;
 }
-   
 
 
-.features-item {
-    font-weight: 400;
+.features-text {
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    color: #434455;
     letter-spacing: 0.02em;
+    color: #434455;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .features-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+
+    .features-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .features-title {
+        text-align: left;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .features-text {
+        font-weight: 400;
+    }
+}
+
+
+@media only screen and (min-width: 1158px) {
+    .features {
+        padding: 120px 0;
+    }
+
+    .features-list {
+        flex-wrap: nowrap;
+        gap: 24px;
+        
+    }
+
+    .features-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    
+    .features-box-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #8E8F99;
+        border-radius: 4px;
+        height: 112px;
+        background: #F4F4FD;
+        margin-bottom: 8px;
+    }
 }

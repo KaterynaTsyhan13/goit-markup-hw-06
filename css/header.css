@@ -1,21 +1,33 @@
-/* 1. Головна обгортка шапки з лінією знизу */
 .header {
     font-weight: 700;
     border-bottom: 1px solid #E7E9FC;
+    padding: 16px 0;
+
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        font-weight: 500;
+        padding: 0;
+ 
+    }
 }
 
 
 .header .container {
     display: flex;
     align-items: center;
-    max-width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
+}
+
+@media only screen and (max-width: 767.98px) {
+    .header .container {
+        justify-content: space-between;
+
+    }
 }
 
 
 .header-logo {
-    margin-right: 76px;
     display: flex;
     align-items: center;
     text-transform: uppercase;
@@ -25,25 +37,46 @@
     line-height: 1.33;
     letter-spacing: 0.03em;
     text-decoration: none;
-    
+}
+
+@media only screen and (min-width: 768px) {
+    .header-logo {
+        margin-right: 120px;
+
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .header-logo {
+        margin-right: 76px;
+
+    }
+}
+
+.acsent {
+    color: #4D5AE5;
 }
 
 
-.header-nav {
-    
+@media only screen and (max-width: 767.98px) {
+
+    .header-nav {
+        display: none;
+    }
 }
 
-
-.header-links {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    font-weight: 500;
-    color: #2E2F42;
-    letter-spacing: 0.02em;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+@media only screen and (min-width: 768px) {
+    .header-links {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        font-weight: 500;
+        color: #2E2F42;
+        letter-spacing: 0.02em;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 }
 
 .header-links .link {
@@ -54,65 +87,106 @@
     color: #2E2F42;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} 
+}
 
 .header-links .link-current {
     color: #404BBF;
 }
-    
+
 .header-links .link-current::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -1px;
     width: 100%;
     height: 4px;
     background-color: #404BBF;
     border-radius: 2px;
-  
 }
 
 .header-links .link:hover,
 .header-links .link:focus {
     color: #404BBF;
-    
-}
-.adress {
-    font-style: normal;
-    margin-left: auto;
-  
 }
 
 
-.adress-links {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    font-weight: 400;
-    color: #434455;
-    letter-spacing: 0.02em;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+@media only screen and (max-width: 767.98px) {
+    .address {
+        display: none;
+    }
 }
 
+@media only screen and (min-width: 768px) {
+    .address {
+        display: block;
+        font-style: normal;
+        margin-left: auto;
+    }
 
-.adress-links .link {
-    display: block;
-    text-decoration: none;
-    color: #434455;
-    white-space: nowrap;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+    .address-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        font-weight: 400;
+        color: #434455;
+        letter-spacing: 0.02em;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .address-links .link {
+        display: block;
+        text-decoration: none;
+        color: #434455;
+        white-space: nowrap;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
+@media only screen and (min-width: 1158px) {
+    .address-links {
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    }
 
-.adress-links .link:hover,
-.adress-links .link:focus {
+    .address-links .link {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+}
+
+.address-links .link:hover,
+.address-links .link:focus {
     color: #404BBF;
 }
 
+.menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.acsent {
-    color: #4D5AE5;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: #2E2F42;
+}
+@media only screen and (min-width: 767.98px) {
+  .menu-btn {
+    display: none  ;
+    
+  }
+}
+.menu-btn:hover,
+.menu-btn:focus {
+    color: #404BBF;
+}
+.menu-btn-icon {
+    fill: currentColor;
 }
