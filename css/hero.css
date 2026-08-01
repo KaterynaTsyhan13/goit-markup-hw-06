@@ -26,7 +26,7 @@
     max-width: 320px;
     text-align: center;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
 }
@@ -71,7 +71,7 @@
 
     .hero-tittle {
         max-width: 496px;
-        font-size: 36px;
+        font-size: 56px;
         line-height: 1.07;
         margin-bottom: 0;
     }
@@ -91,7 +91,4 @@
         gap: 48px;
     }
 
-    .hero-tittle {
-        font-size: 56px;
-    }
 }

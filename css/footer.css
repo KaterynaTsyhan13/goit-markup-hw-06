@@ -1,10 +1,7 @@
-
 .footer {
     background-color: #2E2F42;
     padding: 96px 0;
-   
 }
-
 
 .footer .container {
     display: flex;
@@ -44,7 +41,6 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-
 
 .footer-social-box {
     display: flex;
@@ -98,7 +94,6 @@
     fill: #F4F4FD;
 }
 
-
 .footer-subscribe-box {
     width: 100%;
     display: flex;
@@ -129,9 +124,9 @@
     justify-content: center;
 }
 
+
 .footer-subscribe-input {
     width: 100%;
-    max-width: 398px;
     height: 40px;
     border: 1px solid #FFFFFF;
     background-color: transparent;
@@ -195,13 +190,11 @@
         gap: 0;
         row-gap: 72px;
         max-width: 584px;
-      
     }
 
     .footer-logo-box {
         align-items: flex-start;
         margin-right: 24px;
-
     }
 
     .footer-social-box {
@@ -217,11 +210,11 @@
         gap: 24px;
     }
 
+   
     .footer-subscribe-input {
         width: 264px;
     }
 }
-
 
 
 @media only screen and (min-width: 1158px) {
